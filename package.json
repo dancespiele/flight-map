@@ -1,0 +1,47 @@
+{
+  "name": "flight-map",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Francisco Jesus",
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/parcel build index.html",
+    "watch": "./node_modules/.bin/parcel -p 3000 index.html",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/dotenv": "^6.1.0",
+    "@types/google-map-react": "^0.23.9",
+    "@types/googlemaps": "^3.30.16",
+    "@types/node": "^10.12.5",
+    "@types/react": "^16.7.3",
+    "@types/react-dom": "^16.0.9",
+    "@types/request-promise": "^4.1.42",
+    "babel-polyfill": "^6.26.0",
+    "dom": "^0.0.3",
+    "dotenv": "^6.1.0",
+    "google-map-react": "^1.1.0",
+    "konva": "^2.5.1",
+    "konva-react": "^0.1.0",
+    "node-sass": "^4.10.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.83.0",
+    "spiel-request": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/supertest": "^2.0.6",
+    "babel-core": "^6.26.3",
+    "jest": "^23.6.0",
+    "parcel-bundler": "^1.10.3",
+    "supertest": "^3.3.0",
+    "ts-jest": "^23.10.4",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  }
+}

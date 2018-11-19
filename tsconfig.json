@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "es2018",
+		"module": "commonjs",
+		"sourceMap": true,
+		"strict": true,
+		"noUnusedLocals": true,
+        "noUnusedParameters": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"declaration": true,
+		"outDir": "./lib",
+		"rootDir": ".",
+		"jsx": "react",
+		"types": ["googlemaps","node"]
+	},
+	"include": [
+		"./src"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
