@@ -5,3 +5,4 @@ yarn.lock
 yarn-error.log
 dist
 test/__snapshots__
+test/env.test
