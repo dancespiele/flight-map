@@ -1,2 +1,2 @@
-export {GenerateForm} from "./generateForm";
+export {GenerateForm} from "./component";
 export {IFormProps, IInputText} from "./interfaces";

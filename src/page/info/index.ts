@@ -1,2 +1,2 @@
-export { Info } from "./info";
+export { Info } from "./component";
 export { IInfo } from "./interfaces";

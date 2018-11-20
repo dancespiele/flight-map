@@ -1,2 +1,2 @@
-export {Marker} from "./marker";
+export {Marker} from "./component";
 export {IMarker} from "./interfaces";

@@ -12,12 +12,9 @@
 		"outDir": "./lib",
 		"rootDir": ".",
 		"jsx": "react",
-		"types": ["googlemaps","node"]
+		"types": ["googlemaps","node", "jest"]
 	},
 	"include": [
-		"./src"
-	],
-	"exclude": [
-		"node_modules"
+		"./src", "test/components.tsx", "test/components.test.tsx", "test/components.test.ts", "test/components.test.tsx", "test/components.test.ts"
 	]
 }

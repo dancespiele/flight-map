@@ -2,6 +2,9 @@ import GoogleMap from "google-map-react";
 import * as React from "react";
 import {IMap} from "./interfaces";
 
+/**
+ * class to generate Google Map
+ */
 export class Map extends React.Component<IMap> {
     public render() {
         return (

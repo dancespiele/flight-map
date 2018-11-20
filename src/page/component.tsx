@@ -1,12 +1,19 @@
 import * as React from "react";
-import { Grid, Label } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import { Headers, RequestOptions } from "spiel-request";
 import { GenerateForm, IInputText, Map, Marker} from "../component";
 import { request } from "../config";
 import { Info } from "./info";
 import { IFlights, IPageState } from "./interfaces";
 
+/**
+ * Page component has whole the bussines logic
+ */
 export class Page extends React.Component<any, IPageState> {
+    /**
+     * the components updates if
+     * any of its properties of the state changes the value
+     */
     public state: IPageState = {
         center: {lat: 0, lng: 0},
         errorInput: "",
@@ -77,17 +84,17 @@ export class Page extends React.Component<any, IPageState> {
         );
     }
 
+    /**
+     * get the locations of all the flights
+     * @param params inputs object
+     */
     private async getFlights(params: IInputText[]) {
         if (this.state.errorInput) {
             this.setState({errorInput: ""});
         }
 
         const headers: Headers = {
-            "Accept": "application/json",
-            "Access-Control-Allow-Headers": "X-Requested-With",
-            "Access-Control-Allow-Origin": "*",
-            "appId": "b647ce20",
-            "appKey": "d58bd3b41786cec9e8ff91536f6cacb6",
+            Accept: "application/json",
         };
 
         if (params) {
@@ -133,11 +140,20 @@ export class Page extends React.Component<any, IPageState> {
         }
     }
 
+    /**
+     * get each input object
+     * @param label labe to match
+     * @param params inputs object
+     */
     private getParameter(label: string, params: IInputText[]) {
         return params
             .find((value) => value.label === label);
     }
 
+    /**
+     * check if the value is not a number to throw an error after
+     * @param values input value
+     */
     private validation(values: Array<{label: string, value: string}>) {
         const  regex = RegExp("[^0-9]");
         return values.filter((value) => regex.test(value.value));

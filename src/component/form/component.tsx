@@ -2,6 +2,10 @@ import * as React from "react";
 import {Button, Form} from "semantic-ui-react";
 import {IFormProps} from "./interfaces";
 
+/**
+ * It generates form according with the properties given
+ * @param props properties of GenerateForm
+ */
 export const GenerateForm = (props: IFormProps<any>) => {
     return (
         <Form>
