@@ -9,7 +9,8 @@ Example of google maps that connect to api to get the flights
 
 ## How use it
 
-First you need to install and run [flight-map-api](https://github.com/dancespiele/flight-map-api)
+First you need to install and run [flight-map-api](https://github.com/dancespiele/flight-map-api).
+
 Execute the next commands:
 
 * `git clone git@github.com:dancespiele/flight-map.git`
