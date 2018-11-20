@@ -7,7 +7,7 @@
   "scripts": {
     "build": "./node_modules/.bin/parcel build index.html",
     "watch": "./node_modules/.bin/parcel -p 3000 index.html",
-    "test": "jest"
+    "test": "./node_modules/.bin/jest"
   },
   "dependencies": {
     "@types/dotenv": "^6.1.0",
