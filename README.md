@@ -12,7 +12,7 @@ Example of google maps that connect to api to get the flights
 First you need to install and run [flight-map-api](https://github.com/dancespiele/flight-map-api)
 Execute the next commands:
 
-* `git clone https://github.com/dancespiele/flight-map`
+* `git clone git@github.com:dancespiele/flight-map.git`
 * `cd flight-map`
 * `npm install`
 * Create a .env file in the root of flight-map directory
